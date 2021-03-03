@@ -10,8 +10,8 @@ using MvcMovie.Models;
 
 namespace MvcMovie.Controllers
 {
-    [Route("")]
     [ApiController]
+    [Route("movies")]
     public class MoviesController : Controller
     {
         private readonly MvcMovieContext _context;
@@ -20,7 +20,7 @@ namespace MvcMovie.Controllers
             _context = context;
         }
         // GET: Movies
-        [HttpGet("/IndexMovies")]
+        [HttpGet]
         public async Task<IActionResult> Index(string movieGenre, string searchString)
         {
             // Use LINQ to get list of genres.
@@ -49,13 +49,11 @@ namespace MvcMovie.Controllers
 
             return View(movieGenreVM);
         }
-
         [HttpPost]
         public string Index(string searchString, bool notUsed)
         {
             return "From [HttpPost]Index: filter on " + searchString;
         }
-
         // GET: Movies/Details/5
         [HttpGet("{id}")]
         public async Task<IActionResult> Details(int? id)
@@ -72,7 +70,6 @@ namespace MvcMovie.Controllers
             }
             return View(movie);
         }
-
         // GET: Movies/Create
         public IActionResult Create()
         {
