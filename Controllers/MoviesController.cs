@@ -10,7 +10,7 @@ using MvcMovie.Models;
 
 namespace MvcMovie.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("")]
     [ApiController]
     public class MoviesController : Controller
     {
