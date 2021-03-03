@@ -10,16 +10,17 @@ using MvcMovie.Models;
 
 namespace MvcMovie.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class MoviesController : Controller
     {
         private readonly MvcMovieContext _context;
-
         public MoviesController(MvcMovieContext context)
         {
             _context = context;
         }
-
         // GET: Movies
+        [HttpGet("/IndexMovies")]
         public async Task<IActionResult> Index(string movieGenre, string searchString)
         {
             // Use LINQ to get list of genres.
@@ -56,6 +57,7 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Movies/Details/5
+        [HttpGet("{id}")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -80,7 +82,7 @@ namespace MvcMovie.Controllers
         // POST: Movies/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost("/createMovie")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price,Rating")] Movie movie)
         {
@@ -94,6 +96,7 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Movies/Edit/5
+        [HttpGet("/movie/{id}", Name = "Movie_List")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -173,6 +176,7 @@ namespace MvcMovie.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpGet("/MoviesExists/{id}", Name = "Movie_List")]
         private bool MovieExists(int id)
         {
             return _context.Movie.Any(e => e.Id == id);
