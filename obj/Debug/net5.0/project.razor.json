@@ -15618,6 +15618,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\xiaom\\Desktop\\Decimo semestre\\Programacion web 2\\MvcMovie\\Views\\Home2\\About.cshtml",
+      "TargetPath": "Views\\Home2\\About.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\xiaom\\Desktop\\Decimo semestre\\Programacion web 2\\MvcMovie\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -15645,6 +15650,11 @@
     {
       "FilePath": "c:\\Users\\xiaom\\Desktop\\Decimo semestre\\Programacion web 2\\MvcMovie\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\xiaom\\Desktop\\Decimo semestre\\Programacion web 2\\MvcMovie\\Views\\Home2\\Index.cshtml",
+      "TargetPath": "Views\\Home2\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

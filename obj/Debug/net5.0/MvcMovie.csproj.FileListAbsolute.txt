@@ -173,3 +173,5 @@ C:\Users\xiaom\Desktop\Decimo semestre\Programacion web 2\MvcMovie\obj\Debug\net
 C:\Users\xiaom\Desktop\Decimo semestre\Programacion web 2\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Details.cshtml.g.cs
 C:\Users\xiaom\Desktop\Decimo semestre\Programacion web 2\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Edit.cshtml.g.cs
 C:\Users\xiaom\Desktop\Decimo semestre\Programacion web 2\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Index.cshtml.g.cs
+C:\Users\xiaom\Desktop\Decimo semestre\Programacion web 2\MvcMovie\obj\Debug\net5.0\Razor\Views\Home2\Index.cshtml.g.cs
+C:\Users\xiaom\Desktop\Decimo semestre\Programacion web 2\MvcMovie\obj\Debug\net5.0\Razor\Views\Home2\About.cshtml.g.cs

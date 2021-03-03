@@ -25,6 +25,7 @@ namespace MvcMovie
         public IConfiguration Configuration { get; }
         public IWebHostEnvironment Environment { get; }
 
+       
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -71,5 +72,31 @@ namespace MvcMovie
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
+        /*
+         public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddControllers();
+        }
+
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    {
+        if (env.IsDevelopment())
+        {
+            app.UseDeveloperExceptionPage();
+        }
+
+        app.UseHttpsRedirection();
+
+        app.UseRouting();
+
+        app.UseAuthorization();
+
+        app.UseEndpoints(endpoints =>
+        {
+            endpoints.MapControllers();
+        });
+    }
+
+        */
     }
 }
